@@ -2,7 +2,7 @@
 # sshpoweroff - SSH & Poweroff
 # Description: Establish SSH connections to a range of IPs and power off the computers.
 # 
-# To the extent possible under law, Javier O. Cordero Pérez has waived all copyright and related or neighboring rights to LogMeOut. This work is published from: Puerto Rico.
+# To the extent possible under law, Javier O. Cordero Pérez has waived all copyright and related or neighboring rights to "SSH & Poweroff". This work is published from: Puerto Rico.
 # 
 # This is free and unencumbered software released into the public domain.
 # 
