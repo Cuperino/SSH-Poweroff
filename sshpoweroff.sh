@@ -30,12 +30,11 @@
 # For more information, please refer to <http://unlicense.org/>
 
 PNAME="SSH & Poweroff"
-PVER="1.0"
+PVER="0.1"
 echo "'$PNAME' by Javier O. Cordero Pérez <javier@imaginary.tech>
 version $PVER
-
-To the extent possible under law, Javier O. Cordero Pérez has waived all copyright and related or neighboring rights to 'SSH & Poweroff'. This work is published from: Puerto Rico.
-"
+To the extent possible under law, Javier O. Cordero Pérez has waived all copyright and related or neighboring rights to 'SSH & Poweroff'.
+This work is published from: Puerto Rico."
 # Parse positional arguments
 START=$1
 if [ "$START" == "" ]
@@ -54,12 +53,14 @@ fi
 
 HOST_BASE=$4
 if [ "$HOST_BASE" == "" ]
-	then HOST_BASE="192.168.1."
+	then HOST_BASE="192.168.1"
 fi
+HOST_BASE="$HOST_BASE."
 # For each IP address in range
 for ((i = $START; i <= $END; i++));
 do
-	echo "connection #$i"
+	echo "
+Attempting connection"
 	HOST="$HOST_BASE$i"
 	echo "$HOST"
 	# SSH into the computer and power it off.
